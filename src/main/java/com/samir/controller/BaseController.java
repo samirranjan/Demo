@@ -13,9 +13,12 @@ public class BaseController {
 	@RequestMapping(value="/welcome", method = RequestMethod.GET)
 	public String welcome(ModelMap model) {
  
+		//this set data in model
+		
 		model.addAttribute("message", "Maven Web Project + Spring 3 MVC - welcome()");
  
 		//Spring uses InternalResourceViewResolver and return back index.jsp
+		
 		return "index";
  
 	}
